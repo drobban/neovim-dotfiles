@@ -32,6 +32,8 @@ require("lazy").setup({
 {'hrsh7th/cmp-path'},
 {'hrsh7th/cmp-cmdline'},
 {'hrsh7th/vim-vsnip'},
+{'slashmili/alchemist.vim'},
+{'elixir-editors/vim-elixir'},
 {
   "NeogitOrg/neogit",
   dependencies = {

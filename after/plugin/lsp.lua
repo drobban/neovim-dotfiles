@@ -24,7 +24,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protoc
 -- setting up the elixir language server
 -- you have to manually specify the entrypoint cmd for elixir-ls
 require('lspconfig').elixirls.setup {
-  cmd = { "elixir-ls" },
+  cmd = { "/home/drobban/elixir-ls/language_server.sh" },
   on_attach = on_attach,
   capabilities = capabilities
 }
