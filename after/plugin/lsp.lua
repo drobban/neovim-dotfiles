@@ -29,6 +29,12 @@ require('lspconfig').elixirls.setup {
   capabilities = capabilities
 }
 
+require('lspconfig').pyright.setup {
+  -- Use your default source'ing tool to activate your env.
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
 local cmp = require'cmp'
 
 -- helper functions
