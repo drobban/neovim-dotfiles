@@ -50,5 +50,21 @@ require("lazy").setup({
   dependencies = {
 	{ 'nvim-tree/nvim-web-devicons', opt = true }
   }
+},
+{
+  'crusj/bookmarks.nvim',
+  keys = {
+      { "<tab><tab>", mode = { "n" } },
+  },
+  branch = 'main',
+  dependencies = { 'nvim-web-devicons' },
+  config = function()
+      require("bookmarks").setup()
+      require("telescope").load_extension("bookmarks")
+  end
+},
+{
+	'j-morano/buffer_manager.nvim',
+	dependencies = { 'nvim-lua/plenary.nvim' },
 }
 })
