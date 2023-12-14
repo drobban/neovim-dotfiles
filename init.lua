@@ -52,19 +52,24 @@ require("lazy").setup({
   }
 },
 {
-  'crusj/bookmarks.nvim',
-  keys = {
-      { "<tab><tab>", mode = { "n" } },
-  },
-  branch = 'main',
-  dependencies = { 'nvim-web-devicons' },
-  config = function()
-      require("bookmarks").setup()
-      require("telescope").load_extension("bookmarks")
-  end
+	'nvim-web-devicons',
+	tag='nerd-v2-compat'
+},
+{
+ 'tomasky/bookmarks.nvim',
+ -- after = "telescope.nvim",
+ event = "VimEnter",
 },
 {
 	'j-morano/buffer_manager.nvim',
 	dependencies = { 'nvim-lua/plenary.nvim' },
-}
+},
+-- add this to your lua/plugins.lua, lua/plugins/init.lua,  or the file you keep your other plugins:
+{
+    'numToStr/Comment.nvim',
+    opts = {
+        -- add any options here
+    },
+    lazy = false,
+},
 })
