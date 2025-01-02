@@ -34,6 +34,8 @@ require("lazy").setup({
 {'hrsh7th/vim-vsnip'},
 {'slashmili/alchemist.vim'},
 {'elixir-editors/vim-elixir'},
+{'jose-elias-alvarez/null-ls.nvim'},
+{'MunifTanjim/prettier.nvim'},
 {
   "NeogitOrg/neogit",
   dependencies = {
